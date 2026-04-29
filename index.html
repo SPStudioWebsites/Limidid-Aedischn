@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Limidid Ädischn – Die Partyband aus Franken. Hochzeiten, Firmenfeiern, Stadtfeste und mehr. Jetzt buchen!" />
+    <meta property="og:title" content="Limidid Ädischn – Die Partyband aus Franken" />
+    <meta property="og:description" content="Live-Musik, die unter die Haut geht — von Rock über Pop bis hin zu fränkischen Klassikern." />
+    <meta property="og:image" content="https://limidid-aedischn.de/og-image.jpg" />
+    <meta property="og:url" content="https://limidid-aedischn.de/" />
+    <meta property="og:type" content="website" />
+    <title>Limidid Ädischn – Die Partyband aus Franken</title>
+    <link rel="canonical" href="https://limidid-aedischn.de/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- JSON-LD: MusicGroup + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["MusicGroup", "LocalBusiness"],
+      "name": "Limidid Ädischn",
+      "description": "Partyband aus Franken für Hochzeiten, Firmenfeiern, Stadtfeste und mehr. Rock, Pop, Schlager und fränkische Hits live.",
+      "url": "https://limidid-aedischn.de",
+      "image": "https://limidid-aedischn.de/og-image.jpg",
+      "telephone": "+49 17622783639",
+      "email": "info@limidid-aedischn.de",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Haßfurt",
+        "addressRegion": "Bayern",
+        "addressCountry": "DE"
+      },
+      "areaServed": ["Franken", "Unterfranken", "Schweinfurt", "Würzburg", "Bamberg", "Bayern"],
+      "genre": ["Rock", "Pop", "Schlager", "Fränkische Musik"],
+      "sameAs": []
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Partyband in Franken?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Die Kosten hängen von Dauer, Anlass und Entfernung ab. Schreibt uns für ein unverbindliches Angebot." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie weit fährt Limidid Ädischn für Auftritte?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Wir spielen in ganz Franken und Bayern — Schweinfurt, Würzburg, Bamberg, Nürnberg und Umgebung." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange spielt die Band?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Typisch 3–5 Stunden Live-Musik, ganz nach eurem Wunsch." }
+        },
+        {
+          "@type": "Question",
+          "name": "Könnt ihr Wunschsongs spielen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja! Schreibt uns euren Lieblingssong und wir nehmen ihn gerne ins Repertoire auf." }
+        }
+      ]
+    }
+    </script>
+    <!-- Fonts are self-hosted via @fontsource — no Google requests -->
+    <!-- Preload the two images that appear above the fold on every page load.
+         imagesrcset lets the browser pick the right size immediately (before JS runs),
+         fixing the LCP discovery warning in PageSpeed. -->
+    <link rel="preload" as="image"
+          href="/logo-transparent.webp"
+          imagesrcset="/logo-transparent-720.webp 720w, /logo-transparent.webp 1440w"
+          imagesizes="(max-width: 768px) 80vw, clamp(240px, 50vw, 720px)"
+          type="image/webp" />
+    <!-- Two Bandfoto preloads: mobile gets the portrait crop, desktop the landscape -->
+    <link rel="preload" as="image" href="/Bandfoto-mobile.webp" type="image/webp" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="/Bandfoto.webp" type="image/webp" media="(min-width: 768px)" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Netlify Forms: static copy so Netlify's build bot detects the form.
+         The actual form is rendered by React — this is just for detection. -->
+    <form name="booking" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="booking" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="date" />
+      <input name="anlass" />
+      <textarea name="nachricht"></textarea>
+    </form>
+  </body>
+</html>
