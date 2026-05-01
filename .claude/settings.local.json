@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\user\\\\meine-website\\\\Limidid-aedischn\" -Directory | Where-Object { $_.Name -notmatch 'node_modules' } | Select-Object -ExpandProperty Name)",
+      "Bash(Remove-Item *)"
+    ]
+  }
+}

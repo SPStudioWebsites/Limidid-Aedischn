@@ -1349,11 +1349,12 @@ function BookingForm() {
     e.preventDefault()
     setLoading(true)
     try {
-      await fetch('/', {
+      const res = await fetch('/api/send', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ 'form-name': 'booking', ...form }).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
       })
+      if (!res.ok) throw new Error('send failed')
       setSent(true)
     } catch {
       alert('Etwas ist schiefgelaufen. Schreib uns direkt an info@limidid-aedischn.de')
@@ -1389,11 +1390,8 @@ function BookingForm() {
           ) : (
             <form
               onSubmit={submit}
-              name="booking"
-              data-netlify="true"
               style={{ background: C.card, borderRadius: '20px', padding: isMobile ? '28px 20px' : '52px 48px' }}
             >
-              <input type="hidden" name="form-name" value="booking" />
               {/* Form fields — always 2 columns (2 × 2) */}
               <div className="grid-2" style={{ marginBottom: '18px' }}>
                 {[
