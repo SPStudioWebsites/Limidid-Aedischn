@@ -1125,8 +1125,8 @@ function Band() {
     { name: 'Nadja',  instrument: 'Gesang',            emoji: '🎤', accent: C.red      },
     { name: 'Uwe',    instrument: 'Gesang & Bass',     emoji: '🎸', accent: C.redLight },
     { name: 'Simon',  instrument: 'Gitarre',           emoji: '🎸', accent: C.light    },
-    { name: 'Stefan', instrument: 'Schlagzeug',        emoji: '🥁', accent: C.red      },
-    { name: 'Jessy',  instrument: 'Keyboard',          emoji: '🎹', accent: C.redLight },
+    { name: 'Stefan', instrument: 'Gesang & Schlagzeug',        emoji: '🥁', accent: C.red      },
+    { name: 'Jessie',  instrument: 'Keyboard',          emoji: '🎹', accent: C.redLight },
     { name: 'Alex',   instrument: 'Gitarre',           emoji: '🎸', accent: C.light    },
   ]
 
