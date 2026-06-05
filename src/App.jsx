@@ -842,8 +842,7 @@ function Hero({ parallaxRef }) {
           fontSize: 'clamp(15px, 1.8vw, 19px)', color: 'rgba(247,247,247,0.6)',
           maxWidth: '600px', margin: '0 auto 52px', lineHeight: 1.7, fontWeight: 300,
         }}>
-          Wir bringen jede Feier zum Kochen. Live-Musik, die unter die Haut geht —
-          von Rock über Pop bis hin zu fränkischen Klassikern.
+          Wir bringen jede Feier zum Kochen. Von Rock und Pop bis zu fränkischen Klassikern, alles live, alles mit Vollgas.
         </p>
 
         {/* CTAs — stacked full-width on mobile, side-by-side on desktop */}
@@ -891,7 +890,7 @@ function Hero({ parallaxRef }) {
 function UeberUns() {
   const stats = [
     { value: '50+',   label: 'Live-Auftritte'   },
-    { value: '6',     label: 'Bandmitglieder'   },
+    { value: '5',     label: 'Bandmitglieder'   },
     { value: '10+',   label: 'Jahre Erfahrung'  },
     { value: '100%',  label: 'Partystimmung'    },
   ]
@@ -923,13 +922,12 @@ function UeberUns() {
             </h2>
 
             <p style={{ color: C.muted, fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-              Limidid Ädischn — das sind fünf Musiker aus dem Herzen Frankens, vereint durch die Liebe zur Musik
-              und den Spaß am Feiern. Ob Hochzeit, Firmenevent, Kirchweihe oder Stadtfest — wir liefern den
-              Soundtrack für unvergessliche Abende.
+              Limidid Ädischn sind fünf Musiker aus Franken, die seit Jahren gemeinsam auf der Bühne stehen.
+              Ob Hochzeit, Firmenfeier, Kirchweihe oder Stadtfest, wir sorgen für den Soundtrack, den eure Gäste nicht so schnell vergessen.
             </p>
             <p style={{ color: C.muted, fontSize: '16px', lineHeight: 1.8, marginBottom: '40px' }}>
-              Jeder Auftritt ist für uns mehr als ein Job — es ist unsere Leidenschaft.
-              Wir spielen mit Herz, mit Energie und mit dem Ziel, dass eure Gäste noch lange davon erzählen.
+              Jeder Auftritt ist für uns mehr als ein Job. Wir spielen mit Herz, mit Energie und dem Ziel,
+              dass eure Gäste noch wochenlang davon reden.
             </p>
 
             <a href="#kontakt">
@@ -1122,12 +1120,11 @@ function Band() {
   }, [])
 
   const members = [
-    { name: 'Nadja',  instrument: 'Gesang',            emoji: '🎤', accent: C.red      },
+    { name: 'Nadja',  instrument: 'Gesang',             emoji: '🎤', accent: C.red      },
     { name: 'Uwe',    instrument: 'Gesang & Bass',     emoji: '🎸', accent: C.redLight },
     { name: 'Simon',  instrument: 'Gitarre',           emoji: '🎸', accent: C.light    },
-    { name: 'Stefan', instrument: 'Gesang & Schlagzeug',        emoji: '🥁', accent: C.red      },
-    { name: 'Jessie',  instrument: 'Keyboard',          emoji: '🎹', accent: C.redLight },
-    { name: 'Alex',   instrument: 'Gitarre',           emoji: '🎸', accent: C.light    },
+    { name: 'Stefan', instrument: 'Gesang & Schlagzeug', emoji: '🥁', accent: C.red    },
+    { name: 'Jessie', instrument: 'Keyboard',          emoji: '🎹', accent: C.redLight },
   ]
 
   return (
@@ -1138,11 +1135,11 @@ function Band() {
             Wer wir sind
           </div>
           <h2 className="font-display" style={{ fontSize: 'clamp(36px, 6vw, 72px)', color: C.light, lineHeight: 1 }}>
-            DIE BAND – 6 MUSIKER AUS FRANKEN
+            DIE BAND – 5 MUSIKER AUS FRANKEN
           </h2>
           <div className="accent-line" style={{ width: '80px', margin: '24px auto' }} />
           <p style={{ color: C.muted, fontSize: '17px', maxWidth: '560px', margin: '0 auto' }}>
-            Limidid Ädischn — das sind fünf Musiker aus dem Herzen Frankens, vereint durch die Liebe zur Musik und den Spaß am Feiern.
+            Fünf Musiker aus Franken, seit Jahren auf Bühnen in der ganzen Region zuhause, mit dem gemeinsamen Ziel: eine Party, die keiner so schnell vergisst.
           </p>
         </div>
 
@@ -1195,13 +1192,12 @@ function Band() {
           <div>
             <h3 style={{ color: C.light, fontSize: '26px', fontWeight: 700, marginBottom: '16px' }}>Über uns</h3>
             <p style={{ color: C.muted, lineHeight: 1.8, marginBottom: '16px', fontSize: '15px' }}>
-              Limidid Ädischn — das sind fünf Musiker aus dem Herzen Frankens, vereint durch die Liebe zur Musik
-              und den Spaß am Feiern. Ob Hochzeit, Firmenevent, Kirchweihe oder Stadtfest — wir liefern den
-              Soundtrack für unvergessliche Abende.
+              Seit Jahren spielen wir zusammen auf Bühnen in Franken und Bayern. Wir nehmen jeden Auftritt
+              ernst, gehen auf euren Anlass ein und sorgen dafür, dass am Ende wirklich alle getanzt haben.
             </p>
             <p style={{ color: C.muted, lineHeight: 1.8, fontSize: '15px' }}>
-              Musik ist unsere Leidenschaft — und das spürt man. Jeder Auftritt ist ein Erlebnis,
-              das die Gäste noch lange in Erinnerung behalten.
+              Musik ist unsere Leidenschaft und das spürt man. Jeder Auftritt ist ein Erlebnis,
+              das eure Gäste noch lange in Erinnerung behalten.
             </p>
           </div>
           <div style={{
@@ -1248,16 +1244,20 @@ function FAQ() {
       a: 'Die Kosten hängen von Dauer, Anlass und Entfernung ab. Schreibt uns für ein unverbindliches Angebot.',
     },
     {
-      q: 'Wie weit fährt Limidid Ädischn für Auftritte?',
-      a: 'Wir spielen in ganz Franken und Bayern — Schweinfurt, Würzburg, Bamberg, Nürnberg und Umgebung.',
+      q: 'Wo spielt Limidid Ädischn überall?',
+      a: 'Wir spielen in ganz Franken und Bayern: Schweinfurt, Würzburg, Bamberg, Nürnberg, Haßfurt und Umgebung. Bei größeren Events fahren wir auch weiter.',
     },
     {
       q: 'Wie lange spielt die Band?',
-      a: 'Typisch 3–5 Stunden Live-Musik, ganz nach eurem Wunsch.',
+      a: 'Typisch 3 bis 5 Stunden Live-Musik, ganz nach eurem Wunsch.',
     },
     {
       q: 'Könnt ihr Wunschsongs spielen?',
       a: 'Ja! Schreibt uns euren Lieblingssong und wir nehmen ihn gerne ins Repertoire auf.',
+    },
+    {
+      q: 'Bringt ihr eure eigene Technik mit?',
+      a: 'Ja, wir kommen mit komplettem Equipment: PA-Anlage, Mikrofone und Lichttechnik sind dabei. Ihr müsst euch um nichts kümmern.',
     },
   ]
 
@@ -1916,7 +1916,7 @@ function Gallery() {
             MOMENTE
           </h2>
           <p style={{ color: C.muted, marginTop: 14, fontSize: 15 }}>
-            Bilder sagen mehr als Worte — sieh selbst, was bei unseren Auftritten passiert.
+            Sieh selbst, wie es bei unseren Auftritten zugeht.
           </p>
           <div className="accent-line" style={{ width: 80, margin: '20px auto 0' }} />
         </div>
